@@ -1,14 +1,11 @@
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "./ui/navigation-menu";
 import { Button } from "./ui/button";
-import { Heart, HeartOff, Menu } from "lucide-react";
+import { Heart, Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import hdj_logo from "@/assets/hameau_des_jeunes_logo.png";
 // className="flex items-center justify-center px-5 py-5 space-x-4 shadow-sm"
