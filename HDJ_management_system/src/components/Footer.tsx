@@ -188,7 +188,6 @@ export const Footer = () => {
           </RouterLink>
         </div>
 
-        {/* <div className=" border-t border-gray-800 pt-6 sm:pt-8 mt-6 sm:mt-8 text-gray-400 text-xs sm:text-sm"> */}
         <div className="flex flex-col md:flex-row  items-center justify-center">
           <p className="my-7 text-sm font-light">
             Copyright &copy; {new Date().getFullYear()} by Hameau Des Jeunes St.
@@ -196,7 +195,6 @@ export const Footer = () => {
           </p>
         </div>
       </div>
-      {/* </div> */}
     </footer>
   );
 };
