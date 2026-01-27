@@ -1,5 +1,6 @@
 import { TopNavBar } from "@/components/TopNavBar";
 import aboutImage from "@/assets/hameadu_des_jeunes_community.jpeg";
+import { OurStory } from "@/components/OurStory";
 
 export const AboutUs = () => {
   return (
@@ -23,6 +24,7 @@ export const AboutUs = () => {
           </p>
         </div>
       </header>
+      <OurStory />
     </>
   );
 };
