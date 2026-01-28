@@ -3,6 +3,8 @@ import aboutImage from "@/assets/hameadu_des_jeunes_community.jpeg";
 import { OurStory } from "@/components/OurStory";
 import { MissionAndVision } from "@/components/MissionAndVision";
 import { OurCoreValues } from "@/components/OurCoreValues";
+import { MeetOurTeam } from "@/components/MeetOurTeam";
+import { Footer } from "@/components/Footer";
 
 export const AboutUs = () => {
   return (
@@ -29,6 +31,8 @@ export const AboutUs = () => {
       <OurStory />
       <MissionAndVision />
       <OurCoreValues />
+      <MeetOurTeam />
+      <Footer />
     </>
   );
 };
