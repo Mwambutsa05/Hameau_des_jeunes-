@@ -2,7 +2,6 @@ import { TopNavBar } from "@/components/TopNavBar";
 import resdentialCarePageImg from "@/assets/residential_care_page_img.png";
 import { OurMissionInAction } from "@/components/ResidentialCareComponents/OurMissionInAction";
 import { ResidentialCarePathsWays } from "@/components/ResidentialCareComponents/ResidentialCarePathWays";
-import { RotatedCards } from "@/components/ResidentialCareComponents/RotatedCards";
 
 export const ResidentialCare = () => {
   return (
