@@ -15,7 +15,7 @@ export const ProgramOverview = () => {
           </h1>
         </div>
 
-        <div className="grid  grid-cols-1 md:grid-cols-2 md:place-items-center md:justify-items-center md:mx-36">
+        <div className="grid  grid-cols-1 place-items-center space-y-5 md:grid-cols-2 md:place-items-center md:justify-items-center md:mx-36">
           <div>
             {/* Paragraphs */}
             <div className="max-w-4xl mx-auto space-y-6 px-15">

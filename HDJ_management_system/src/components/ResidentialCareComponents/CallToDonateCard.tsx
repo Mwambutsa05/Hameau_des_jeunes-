@@ -21,7 +21,7 @@ export const CallToDonate = () => {
           <div className="flex gap-5">
             <Button
               onClick={() => navigate("/donate")}
-              className="bg-button-yellow rounded-xl text-[#0F3D2E]"
+              className="bg-button-yellow rounded-xl text-[#0F3D2E] hover:bg-amber-500"
             >
               Donate This Program
             </Button>

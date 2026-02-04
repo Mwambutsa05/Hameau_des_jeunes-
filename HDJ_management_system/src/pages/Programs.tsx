@@ -139,7 +139,10 @@ export const Programs = () => {
                   </div>
                 </CardHeader>
 
-                <Button className="bg-[#0F3D2E] text-white mx-6 mb-4 rounded-lg">
+                <Button
+                  className="bg-[#0F3D2E] text-white mx-6 mb-4 rounded-lg"
+                  onClick={() => navigate(`/programs/${item.slug}`)}
+                >
                   {item.readMoreBtn}
                 </Button>
               </Card>
@@ -162,12 +165,16 @@ export const Programs = () => {
       </div>
 
       <div className="py-10 flex items-center justify-center gap-5">
-        <Button className="bg-[#0F3D2E] text-white text-center rounded-lg">
+        <Button
+          className="bg-[#0F3D2E] text-white text-center rounded-lg"
+          onClick={() => navigate("/donate")}
+        >
           Donate to Programs
         </Button>
         <Button
           variant="outline"
           className="border-lg border-[#0F3D2E] text-[#0F3D2E]"
+          onClick={() => navigate("/contact")}
         >
           Partner with us
         </Button>

@@ -3,7 +3,6 @@ import { MdOutlineLocationOn } from "react-icons/md";
 import { CiCalendar } from "react-icons/ci";
 import { GoPeople } from "react-icons/go";
 import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
-import { Description } from "@radix-ui/react-dialog";
 
 const programData = [
   {

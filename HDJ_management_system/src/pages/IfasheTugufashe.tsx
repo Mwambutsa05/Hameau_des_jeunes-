@@ -3,6 +3,12 @@ import IfasheTugufasheImg from "@/assets/ifasheImage.jpg";
 import { ProgramSnapshot } from "@/components/IfasheTugufasheComponents/ProgramSnapshot";
 import { ProgramOverview } from "@/components/IfasheTugufasheComponents/ProgramOverview";
 import { HowTheProgramWorks } from "@/components/IfasheTugufasheComponents/HowTheProgramWorks";
+import { HistoryAndEvolution } from "@/components/IfasheTugufasheComponents/HistoryAndEvolution";
+import { FundingAndNeeds } from "@/components/IfasheTugufasheComponents/FundingAndNeeds";
+import { HowToSupport } from "@/components/IfasheTugufasheComponents/HowToSupport";
+import { FundingStats } from "@/components/IfasheTugufasheComponents/FundingStats";
+import { CallToDonate } from "@/components/ResidentialCareComponents/CallToDonateCard";
+import { Footer } from "@/components/Footer";
 
 export const IfasheTugufashe = () => {
   return (
@@ -49,6 +55,12 @@ export const IfasheTugufashe = () => {
       <ProgramSnapshot />
       <ProgramOverview />
       <HowTheProgramWorks />
+      <HistoryAndEvolution />
+      <FundingAndNeeds />
+      <HowToSupport />
+      <FundingStats />
+      <CallToDonate />
+      <Footer />
     </>
   );
 };

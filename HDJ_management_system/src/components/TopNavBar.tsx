@@ -58,7 +58,7 @@ export const TopNavBar = () => {
 
               <Button
                 onClick={() => navigate("/donate")}
-                className="bg-button-yellow mt-6 mx-5"
+                className="bg-button-yellow mt-6 mx-5 hover:bg-amber-500"
               >
                 <div className="flex items-center gap-2">
                   <Heart size={18} />
