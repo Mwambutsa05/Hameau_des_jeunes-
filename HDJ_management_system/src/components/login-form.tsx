@@ -53,7 +53,36 @@ export function LoginForm({
                 localStorage.setItem("refreshToken", res.refresh);
                 localStorage.setItem("user", JSON.stringify(res.user));
 
-                navigate("/adminSignup");
+                const loggedInUserString = localStorage.getItem("user");
+
+                if (!loggedInUserString) {
+                  // user not found in localStorage
+                  console.error("No user in localStorage");
+                  return;
+                }
+
+                const loggedInUser = JSON.parse(loggedInUserString);
+
+                switch (loggedInUser.role) {
+                  case "SYSTEM_ADMIN":
+                    navigate("/Dashboard");
+                    break;
+
+                  case "RESIDENTIAL_MANAGER":
+                    navigate("/residentialCareDashboard");
+                    break;
+
+                  case "INTERNSHIPS_MANAGER":
+                    navigate("/internshipsDashboard");
+                    break;
+
+                  case "IFASHE_MANAGER":
+                    navigate("/ifasheTugufasheDashboard");
+                    break;
+
+                  default:
+                    console.warn("Unknown role:", loggedInUser.role);
+                }
               } catch (err) {
                 console.error("Login failed", err);
               }
@@ -75,7 +104,7 @@ export function LoginForm({
                 <div className="flex items-center">
                   <FieldLabel htmlFor="password">Password</FieldLabel>
                   <a
-                    href="#"
+                    href="/resetPassword"
                     className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
                   >
                     Forgot your password?

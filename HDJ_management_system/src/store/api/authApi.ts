@@ -3,8 +3,8 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const authApi = createApi({
   reducerPath: "authApi",
   baseQuery: fetchBaseQuery({
-    // baseUrl: "https://tricky-cyb-matabar-576778bf.koyeb.app/api",
-    baseUrl: "http://192.168.1.129:8000/api",
+    baseUrl: "https://tricky-cyb-matabar-576778bf.koyeb.app/api",
+    // baseUrl: "http://192.168.1.129:8000/api",
     prepareHeaders: (headers) => {
       const token = localStorage.getItem("accessToken");
       if (token) {
