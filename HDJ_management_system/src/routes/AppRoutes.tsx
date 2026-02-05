@@ -1,5 +1,5 @@
 import { AboutUs } from "@/pages/AboutUs";
-<<<<<<< HEAD
+import { Contacts } from "@/pages/Contacts";
 import { Dashboard } from "@/pages/Dashboard";
 import { IfasheTugufasheDashboard } from "@/pages/DashboardPages/IfasheTugufasheDashboard";
 import { InternshipsDashboard } from "@/pages/DashboardPages/InternshipsDashboard";
@@ -7,13 +7,8 @@ import { ResidentialCareDashboard } from "@/pages/DashboardPages/ResidentialCare
 import Donate from "@/pages/Donate";
 import { Home } from "@/pages/Home";
 import { IfasheTugufashe } from "@/pages/IfasheTugufashe";
-import { LoginPage } from "@/pages/Login";
-=======
-import { Contacts } from "@/pages/Contacts";
-import Donate from "@/pages/Donate";
-import { Home } from "@/pages/Home";
 import Internship from "@/pages/Internship";
->>>>>>> 7f9dc234ea86bc7a300ae6b947c468a916e567cf
+import { LoginPage } from "@/pages/Login";
 import OurImpact from "@/pages/OurImpact";
 import { Programs } from "@/pages/Programs";
 import { ResetPassword } from "@/pages/ResetPassword";
@@ -29,7 +24,6 @@ export const AppRoutes = () => {
       <Route path="/programs" element={<Programs />} />
       <Route path="/programs/residentialCare" element={<ResidentialCare />} />
       <Route path="/OurImpact" element={<OurImpact />} />
-<<<<<<< HEAD
       <Route path="/donate" element={<Donate />} />
       <Route path="programs/ifasheTugufashe" element={<IfasheTugufashe />} />
 
@@ -50,11 +44,9 @@ export const AppRoutes = () => {
         path="/ifasheTugufasheDashboard"
         element={<IfasheTugufasheDashboard />}
       />
-=======
-      <Route path="/donate" element={<Donate/>} />
-      <Route path="/internships" element={<Internship/>} />
-      <Route path="/contacts" element={<Contacts />} /> 
->>>>>>> 7f9dc234ea86bc7a300ae6b947c468a916e567cf
+      <Route path="/donate" element={<Donate />} />
+      <Route path="/internships" element={<Internship />} />
+      <Route path="/contacts" element={<Contacts />} />
     </Routes>
   );
 };
