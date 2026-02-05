@@ -11,7 +11,7 @@ import { toast } from "react-toastify";
 export const ResetPassword = () => {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
-  const [requestPasswordReset, { isLoading, error, isSuccess }] =
+  const [requestPasswordReset, { isLoading, error }] =
     useRequestPasswordResetMutation();
 
   const handleSubmit = async () => {
@@ -65,6 +65,12 @@ export const ResetPassword = () => {
           <MdKeyboardArrowLeft size={20} />
           <h1>Back to Login</h1>
         </div>
+
+        {error && (
+          <p className="text-sm text-red-500 text-center">
+            {(error as any)?.data?.message || "Request failed"}
+          </p>
+        )}
       </section>
     </>
   );
